@@ -25,49 +25,49 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsl(0, 10%, 30%) 97%
+    hsl(0, 10%, 32%) 97%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(212, 100%, 32%, 0.589) 0%, 
+    hsla(203, 28%, 28%, 0.61) 100%
+  ), hsla(236, 100%, 50%, 0.329);
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
+    #1c1e20 0%, 
+    hsl(228, 8%, 24%) 50%
   );
   --bg-gradient-yellow-2: linear-gradient(
     135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
+    #bfc5d3(45, 65%, 36%, 0.251) 0%, 
+    #ffffff(35, 100%, 68%, 0) 59.86%
+  ), #ffffff(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
+    hsl(192, 100%, 47%) 0%, 
+    hsla(295, 86%, 49%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
+    hsl(184, 94%, 55%), 
+    hsl(199, 100%, 50%)
   );
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
+  --jet: hsl(199, 92%, 53%);
+  --onyx: hsl(195, 24%, 81%);
+  --eerie-black-1: hsl(0, 0%, 35%);
+  --eerie-black-2: hsl(0, 0%, 11%);
+  --smoky-black: hsl(0, 0%, 0%);
+  --white-1: hsl(0, 0%, 0%);
   --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --orange-yellow-crayola: hsl(207, 100%, 63%);
+  --vegas-gold: #1389ad;
+  --light-gray: hsl(0, 0%, 73%);
+  --light-gray-70: hsla(0, 0%, 57%, 0.7);
+  --bittersweet-shimmer: hsl(0, 0%, 0%);
 
   /**
    * typography
@@ -97,9 +97,9 @@
    */
   
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+  --shadow-2: 0 16px 30px hsla(0, 31%, 44%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+  --shadow-4: 0 25px 50px hsla(0, 29%, 45%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
   /**
@@ -459,8 +459,8 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
-  backdrop-filter: blur(10px);
+  background: hsla(0, 0%, 0%, 0);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
   box-shadow: var(--shadow-2);
@@ -740,11 +740,11 @@ main {
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
+  scroll-padding-inline: 10px;
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: 40%;
   scroll-snap-align: start;
 }
 
@@ -1233,13 +1233,13 @@ textarea.form-input::-webkit-resizer { display: none; }
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 50px) {
 
   /**
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .clients-item { min-width: calc(10% - 10px); }
 
 
 
@@ -1475,12 +1475,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-list {
     gap: 50px;
-    margin: 0 -30px;
-    padding: 45px;
-    scroll-padding-inline: 45px;
+    margin: 0 -20px;
+    padding: 50px;
+    scroll-padding-inline: 20px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .clients-item { min-width: calc(33% - 10px); }
 
 
 
@@ -1736,7 +1736,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .clients-item { min-width: calc(10% - 10px); }
 
 
 
