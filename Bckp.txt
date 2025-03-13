@@ -1,0 +1,157 @@
+   <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Power BI</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Excel</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Power BI</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Excel</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="power bi">
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7292199048755736578/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Fotos/ufu/1.png" alt="UFU" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Universidade de Uberlândia - Sustentabilidade</h3>
+
+                <p class="project-category">Power BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="power bi">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Fotos/steam/1.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Steam Games Review</h3>
+
+                <p class="project-category">Power BI</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="excel">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Fotos/excel/1.png" alt="excel" loading="lazy" height="90px" width="90px">
+                </figure>
+
+                <h3 class="project-title">Car sales </h3>
+
+                <p class="project-category">Excel</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://www.linkedin.com/posts/guilherme-carvalho-85a479218_ol%C3%A1-rede-venho-compartilhar-meus-%C3%BAltimos-activity-7284717139624660992-CXij?utm_source=share&utm_medium=member_desktop" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Fotos/python/automação print.png" alt="python" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web Product Registration</h3>
+
+                <p class="project-category">Python</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="python">
+              <a href="https://www.linkedin.com/posts/guilherme-carvalho-85a479218_ol%C3%A1-a-todos-venho-compartilhar-mais-um-activity-7284907149917364224-_n74?utm_source=share&utm_medium=member_desktop" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Fotos/python/analys.png" alt="python" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Analysis of cancellations </h3>
+
+                <p class="project-category">Python</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
